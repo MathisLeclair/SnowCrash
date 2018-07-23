@@ -1,0 +1,9 @@
+find / -user flag00 2>/dev/null
+looking for stuff with perm and getting rid of the error
+->cdiiddwpgswtgt
+su flag cdiiddwpgswtgt
+->nope
+https://www.dcode.fr/chiffre-rot
+->ASC+15 = NOTTOOHARDHERE
+su flag00 NOTTOOHARDHERE
+->GG

