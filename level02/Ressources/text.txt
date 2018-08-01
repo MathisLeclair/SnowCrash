@@ -1,0 +1,18 @@
+Wireshard : https://www.wireshark.org/
+->follow TCP
+
+-->
+Linux 2.6.38-8-generic-pae (::ffff:10.1.1.2) (pts/10)
+
+..wwwbugs login: l.le.ev.ve.el.lX.X
+..
+Password: ft_wandr...NDRel.L0L
+.
+..
+Login incorrect
+wwwbugs login: 
+<--
+
+(. =  del)
+
+Password -> ft_waNDReL0L
