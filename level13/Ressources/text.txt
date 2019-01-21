@@ -1,0 +1,33 @@
+gdb ~/level13
+
+disas main
+
+"
+[...]
+	0x08048595 <+9>:	call   0x8048380 <getuid@plt>
+	0x0804859a <+14>:	cmp    $0x1092,%eax
+	0x0804859f <+19>:	je     0x80485cb <main+63>
+[...]
+"
+
+->if UID == 4242 jump to main +63
+
+"
+[...]
+	0x080485cb <+63>:	movl   $0x80486ef,(%esp)
+[...]
+"
+
+b *0x0804859f
+->break at jump
+
+run
+->breakpoint
+jump *0x080485cb
+
+"
+Continuing at 0x80485cb.
+your token is 2A31L79asukciNyi8uppkEuSx
+"
+
+->ez win

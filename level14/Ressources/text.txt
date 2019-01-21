@@ -1,0 +1,26 @@
+gdb getflag
+
+disas main
+
+"
+[...]
+	0x08048bb6 <+624>:	cmp    $0xbc6,%eax
+	0x08048bbb <+629>:	je     0x8048de5 <main+1183>
+[...]
+"
+->if getflag level14 jump to main+629
+
+"
+[...]
+	0x08048de3 <+1181>:	jmp    0x8048e2f <main+1257>
+	0x08048de5 <+1183>:	mov    0x804b060,%eax
+	0x08048dea <+1188>:	mov    %eax,%ebx
+[...]
+"
+->set breakpoint at start of main
+
+->jump
+jump *0x08048de5
+
+VOILA
+
